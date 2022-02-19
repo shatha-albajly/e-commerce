@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    %> <% category.forEach( categoryItem => { %>
+    <div>
+      <img src=" <%= categoryItem.thumbnail %>  " alt="" />
+      <h4><%= categoryItem.title %></h4>
+      <p>Description: <%= categoryItem.description %></p>
+      <p>Price: <%= categoryItem.price %></p>
+      <p>Rating: <%= categoryItem.rating %></p>
+      <p>Stock: <%= categoryItem.stock %></p>
+      <p>Brand: <%= categoryItem.brand %></p>
+    </div>
+
+    <% }) %>
+  </body>
+</html>

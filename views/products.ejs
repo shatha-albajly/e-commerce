@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    %> <% products.forEach( product => { %>
+    <div>
+      <img src=" <%= product.thumbnail %>  " alt="" />
+      <h4><a href="/products/ <%=product.id %>"><%= product.title %></a></h4>
+      <p><%= product.description %></p>
+    </div>
+
+    <% }) %>
+  </body>
+</html>
